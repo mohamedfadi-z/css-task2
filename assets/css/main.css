@@ -1,0 +1,120 @@
+html {
+    --primaryfontcolor: #5B5B5B;
+}
+
+.header .row {
+    justify-content: space-between;
+}
+
+.header {
+    margin: 20px 0px;
+}
+
+.list a {
+    font-family: "Poppins";
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--primaryfontcolor);
+    text-transform: capitalize;
+}
+
+.header .sidebar {
+    display: none;
+    width: 40px;
+}
+
+.list .row {
+    gap: 0px 80px;
+}
+
+.profil a {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primaryfontcolor);
+    text-transform: capitalize;
+}
+
+.profil .row {
+    gap: 0px 12px;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1350px) {
+    .container {
+        width: calc(100% - 120px);
+    }
+}
+
+@media screen and (max-width: 1111px) {
+    .container {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .container {
+        width: calc(100% - 30px);
+    }
+
+    .list .row {
+        gap: 0px 50px;
+    }
+
+}
+@media screen and (max-width: 900px){
+    .header .logo{
+        width: 80px;
+    }
+
+    .header .profil img{
+        width: 50px;
+    }
+
+    .list a{
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 750px){
+    .list .row {
+    gap: 0px 30px;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .list {
+        display: none;
+    }
+
+    .header .sidebar {
+        display: block;
+    }
+
+    .profil .row {
+        gap: 0px 5px;
+    }
+
+    .header {
+        margin: 20px 0px;
+    }
+
+    .header .logo{
+        width: 80px;
+    }
+
+    .header .profil img{
+        width: 50px;
+    }
+
+
+
+}
