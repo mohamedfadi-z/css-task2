@@ -46,15 +46,51 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1350px) {
     .container {
         width: calc(100% - 120px);
     }
 }
 
-@media screen and (max-width: 1111px) {
+@media screen and (max-width: 1200px) {
     .container {
         width: calc(100% - 60px);
+    }
+    .list .row {
+        gap: 0px 50px;
     }
 }
 
@@ -64,33 +100,13 @@ img {
     }
 
     .list .row {
-        gap: 0px 50px;
+        gap: 0px 40px;
     }
 
 }
-@media screen and (max-width: 900px){
-    .header .logo{
-        width: 80px;
-    }
-
-    .header .profil img{
-        width: 50px;
-    }
-
-    .list a{
-        font-size: 16px;
-    }
 
 
-}
-
-@media screen and (max-width: 750px){
-    .list .row {
-    gap: 0px 30px;
-}
-}
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .list {
         display: none;
     }
