@@ -1,5 +1,7 @@
 html {
     --primaryfontcolor: #5B5B5B;
+    --secolor: #252641;
+    --barcolor: #49BBBD;
 }
 
 .header .row {
@@ -7,7 +9,7 @@ html {
 }
 
 .header {
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .list a {
@@ -42,6 +44,116 @@ html {
 img {
     width: 100%;
 }
+
+.current_lessons {
+    overflow: hidden;
+    background-color: rgba(157, 204, 255, 0.2);
+}
+
+.current_lessons .lesson_cards {
+    margin: 0px 65px;
+    margin-bottom: 155px;
+}
+
+.current_lessons .lesson {
+    width: calc((100% - 100px) / 3);
+    background-color: white;
+    font-family: Poppins;
+    box-shadow: 0 18.83px 47.08px 0 #2F327D1A;
+}
+
+.lesson_cards .row {
+    gap: 0px 50px;
+}
+
+
+
+.current_lessons .lesson {
+    border-radius: 20px;
+    padding: 0px 21.64px;
+    padding-top: 19.6px;
+}
+
+.current_lessons .lesson h2 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.lesson_cards .lesson .row {
+    gap: 0px 15px;
+}
+
+.current_lessons .lessons_title .row {
+    justify-content: space-between;
+    margin: 50px 120px 50px 18px;
+    gap: 20px 0px;
+
+}
+
+.progressbar .bar {
+    width: 100%;
+    background-color: #D9D9D9;
+    height: 8px;
+    border-radius: 2px;
+    margin-bottom: 50px;
+}
+
+.progressbar .progress {
+    border-radius: 2px;
+    background-color: var(--barcolor);
+    height: 8px;
+    width: calc(100% * 0.7142);
+}
+
+.lesson .cardprofil {
+    margin-bottom: 25px;
+}
+
+.cardprofil img{
+    width: 42px;
+}
+
+.progressbar p {
+    text-align: right;
+    margin-top: 12px;
+}
+
+
+.current_lessons .lessons_title {
+    font-family: Poppins;
+}
+
+
+.current_lessons .lessons_title h2 {
+    color: var(--secolor);
+}
+
+.current_lessons .lessons_title a {
+    color: var(--barcolor);
+}
+
+.lesson h2 {
+    color: var(--secolor);
+}
+
+.lesson a {
+    color: black;
+}
+
+.lesson .progressbar {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+
+.lesson a>img{
+    border-radius: 20px;
+}
+
+
+
 
 
 
@@ -83,12 +195,21 @@ img {
     .container {
         width: calc(100% - 120px);
     }
+
+    .current_lessons .lesson {
+        width: calc((100% - 50px) / 2);
+    }
+
+    .lesson_cards .row {
+        gap: 20px 50px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     .container {
         width: calc(100% - 60px);
     }
+
     .list .row {
         gap: 0px 50px;
     }
@@ -102,6 +223,12 @@ img {
     .list .row {
         gap: 0px 40px;
     }
+
+    .current_lessons .lessons_title .row{
+        margin-right: 60px;
+    }
+
+
 
 }
 
@@ -123,14 +250,42 @@ img {
         margin: 20px 0px;
     }
 
-    .header .logo{
+    .header .logo {
         width: 80px;
     }
 
-    .header .profil img{
+    .header .profil img {
         width: 50px;
     }
 
+    .current_lessons .lesson {
+        width: 100%;
+    }
 
 
 }
+
+@media screen and (max-width:840px) {
+    .current_lessons .lesson_cards {
+        margin: 0px 30px;
+        margin-bottom: 155px;
+    }
+
+
+    
+}
+@media screen and (max-width:500px) {
+        .current_lessons .lesson_cards {
+            margin: 0px 10px;
+            margin-bottom: 155px;
+        }
+
+        .current_lessons .lessons_title .row {
+            gap: 20px 0px;
+            margin: 30px 120px 30px 18px;
+
+        }
+
+
+
+    }
