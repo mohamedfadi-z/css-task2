@@ -33,7 +33,7 @@ html {
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 500;
-    color: var(--primaryfontcolor);
+    color: black;
     text-transform: capitalize;
 }
 
@@ -50,11 +50,12 @@ img {
 .current_lessons {
     overflow: hidden;
     background-color: rgba(157, 204, 255, 0.2);
+
 }
 
 .current_lessons .lesson_cards {
-    margin: 0px 65px;
-    margin-bottom: 155px;
+    margin: 0px 65px 155px 65px;
+    ;
 }
 
 .current_lessons .lesson {
@@ -76,7 +77,7 @@ img {
     padding-top: 19.6px;
 }
 
-.current_lessons .lesson h2 {
+.current_lessons .lesson h3 {
     margin-top: 12px;
     margin-bottom: 10px;
     font-family: "Poppins";
@@ -91,11 +92,18 @@ img {
 .current_lessons .lessons_title .row {
     justify-content: space-between;
     margin: 50px 120px 50px 18px;
-    gap: 20px 0px;
+    gap: 20px 20px;
+
+}
+
+.current_lessons .lessons_title a {
+    font-size: 20px;
+    font-weight: 700;
 
 }
 
 .progressbar .bar {
+    margin-left: 5px;
     width: 100%;
     background-color: #D9D9D9;
     height: 8px;
@@ -111,6 +119,7 @@ img {
 }
 
 .lesson .cardprofil {
+    margin-left: 5px;
     margin-bottom: 25px;
 }
 
@@ -131,13 +140,16 @@ img {
 
 .current_lessons .lessons_title h2 {
     color: var(--secolor);
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .current_lessons .lessons_title a {
     color: var(--barcolor);
 }
 
-.lesson h2 {
+.lesson h3 {
+    margin-left: 5px;
     color: var(--secolor);
 }
 
@@ -147,11 +159,20 @@ img {
 
 .lesson .progressbar {
     color: rgb(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 
 .lesson a>img {
     border-radius: 20px;
+}
+
+
+.cardprofil a {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 
@@ -235,11 +256,246 @@ img {
 }
 
 
+/*from here section 4*/
+
+.recomn {
+    background-color: rgba(157, 204, 255, 0.2);
+    margin-top: 95px;
+    overflow: hidden;
+}
+
+.recomn_header .row {
+    justify-content: space-between;
+    margin: 102px 57.79px 47px 122.06px;
+    font-family: Poppins;
+}
+
+.recomn_header h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.recomn_header a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--barcolor);
+
+}
+
+
+.recomn_cards>.row {
+    margin: 47px 82px 208px 122px;
+    gap: 50px;
+}
+
+.card {
+    width: calc((100% - 150px) / 4);
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    font-family: Poppins;
+    box-shadow: 0px 18.83px 47.08px 0px #2F327D1A;
+}
+
+
+
+.card .card_info {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 6px;
+}
+
+.card .card_info img {
+    width: 24px;
+    height: 28px;
+}
+
+.card_info .row {
+    gap: 10px;
+}
+
+.card .card_disc a {
+    display: block;
+    margin-left: 6px;
+    margin-right: 2px;
+    margin-bottom: 21px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secolor);
+}
+
+.card .card_disc p {
+    margin-left: 6px;
+    margin-right: -1px;
+    margin-bottom: 17px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--primaryfontcolor);
+}
+
+.card_foter {
+    justify-content: space-between;
+}
+
+.card_foter .card_price {
+    gap: 14px;
+}
+
+.card_foter .card_profil {
+    gap: 17.68px;
+}
+
+.card .card_foter .prev {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #00000080;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card .card_foter .current {
+    color: var(--barcolor);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card_foter .card_profil img {
+    width: 48px;
+
+}
+
+.card>a>img {
+    aspect-ratio: 7 / 5;
+}
+
+
+/* from here section 5 */
+
+
+.choices_header .row {
+    justify-content: space-between;
+    margin-top: 95px;
+    margin-bottom: 70px;
+    font-family: Poppins;
+}
+
+
+.choices_header h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+.choices_header a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--barcolor);
+
+}
+
+
+.choices_cards>.row {
+    margin-bottom: 90px;
+    gap: 50px;
+}
 
 
 
 
 
+/* from here section 6 */
+
+footer {
+    overflow: hidden;
+    background-color: #252641;
+}
+
+.firstthing .row {
+    gap: 43.54px;
+    margin-top: 74px;
+    justify-content: center;
+}
+
+
+.firstthing img {
+    padding-right: 81.77px;
+    border-right: solid 1px #626381;
+}
+
+.firstthing p {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.sub {
+    text-align: center;
+    font-family: Poppins;
+}
+
+.sub input {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    color: #83839A;
+    border-radius: 80px;
+    margin-right: 21.24px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: solid 1px;
+    margin-bottom: 20px;
+
+}
+
+.sub p {
+    margin-top: 95px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #B2B3CF;
+}
+
+.sub button {
+    background-color: var(--barcolor);
+    margin-bottom: 96px;
+    border-radius: 80px;
+    font-size: 22px;
+    font-weight: 500px;
+    color: #FFFFFF;
+    padding: 14px 36.11px;
+}
+
+
+.footer .policy {
+    text-align: center;
+    font-family: Poppins;
+}
+
+.policy a {
+    color: #B2B3CF;
+}
+
+.policy .row {
+    justify-content: center;
+    gap: 0 21.24px;
+    margin-bottom: 20px;
+}
+
+.policy .Privacy {
+    padding: 0 21.24px;
+    border-left: 1px solid #B2B3CF;
+    border-right: 1px solid #B2B3CF;
+}
+
+.policy p {
+    color: #B2B3CF;
+    font-size: 22px;
+    font-weight: 400;
+
+    margin-bottom: 40px;
+}
 
 
 
@@ -266,6 +522,13 @@ img {
         width: calc((100% - 176.14px) / 3);
     }
 
+    .card {
+        width: calc((100% - 100px) / 3);
+    }
+
+    .recomn_cards>.row {
+        gap: 30px 50px;
+    }
 
 
 
@@ -292,6 +555,19 @@ img {
     .category .catg {
         margin: 30px 110px 20px 110px;
     }
+
+    .recomn_cards>.row {
+        margin: 47px 50px 208px 50px;
+        gap: 50px;
+    }
+
+    .recomn_header .row {
+
+        margin: 102px 57.79px 47px 50px;
+
+    }
+
+
 
 }
 
@@ -321,6 +597,10 @@ img {
         margin: 80px 140px 60px 140px;
     }
 
+    .card {
+        width: calc((100% - 50px) / 2);
+    }
+
 }
 
 
@@ -339,7 +619,7 @@ img {
 
 @media screen and (max-width:1050px) {
     .container {
-        width: calc(100% - 30px);
+        width: calc(100% - 50px);
     }
 
     .list .row {
@@ -354,11 +634,14 @@ img {
         gap: 80px 50px;
         margin: auto;
     }
+
     .categorys .category {
         width: calc((100% - 50px) / 2);
         margin: auto;
 
     }
+
+
 
 
 }
@@ -395,6 +678,10 @@ img {
 
 
 
+    .card {
+        width: 100%;
+    }
+
 
 }
 
@@ -425,7 +712,16 @@ img {
 
     }
 
+    .recomn_cards>.row {
+        margin: 47px 30px 208px 30px;
+        gap: 50px;
+    }
 
+    .recomn_header .row {
+
+        margin: 102px 57.79px 47px 30px;
+
+    }
 
 }
 
@@ -448,6 +744,36 @@ img {
         margin-left: 15px;
 
     }
+
+    .current_lessons .lessons_title h2 {
+        color: var(--secolor);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .current_lessons .lessons_title .row {
+
+        margin: 50px 10px 50px 18px;
+
+
+    }
+
+    .sub input {
+        margin-left: 20px;
+    }
+
+    .sub button {
+        margin-right: 20px;
+    }
+
+
+    .policy .row {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    
+
 }
 
 @media screen and (max-width:500px) {
@@ -458,7 +784,7 @@ img {
 
     .current_lessons .lessons_title .row {
         gap: 20px 0px;
-        margin: 30px 120px 30px 18px;
+        margin: 30px 10px 30px 18px;
 
     }
 
@@ -480,8 +806,36 @@ img {
 
     }
 
+    .recomn_cards>.row {
+        margin: 47px 10px 208px 10px;
+        gap: 50px;
+    }
 
 
+
+    .firstthing img {
+        padding-right: 40px;
+
+    }
+
+    .sub p {
+
+        font-size: 20px;
+        font-weight: 400;
+
+    }
+
+    .policy .Privacy {
+        padding: 0 10.24px;
+        border-left: 1px solid #B2B3CF;
+        border-right: 1px solid #B2B3CF;
+    }
+
+    .policy .row {
+        justify-content: center;
+        gap: 10px 10.24px;
+        margin-bottom: 20px;
+    }
 
 
 }
@@ -489,11 +843,37 @@ img {
 
 @media screen and (max-width:400px) {
     .category .catg {
-        margin: 40px 90px 20px 90px;
+        margin: 40px 70px 20px 70px;
     }
 
     .category p {
         margin-top: 10px;
         margin-bottom: 40px;
     }
+
+    .firstthing img {
+        padding-right: 20px;
+
+    }
+
+    .firstthing .row {
+        gap: 20px;
+    }
+
+    .sub input {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+
+    .sub input {
+        font-size: 16px;
+        padding: 15px 20px;
+
+    }
+    .sub button {
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+
 }
